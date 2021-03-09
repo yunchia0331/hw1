@@ -63,29 +63,33 @@ mean2 = s2 / a2
 mean3 = s3 / a3
 mean4 = s4 / a4
 mean5 = s5 / a5
+
+alist = []
+
 if mean1 == 0:
-   print("[['C0A880', 'None'], ")
+   alist.append(['C0A880', 'None'])
 else: 
-   print('[[\'%s\', %.2f], ' % ('C0A880', round(mean1, 2)))
+   alist.append(['C0A880', round(mean1, 2)])
 
 if mean2 == 0:
-   print("['C0F9A0', 'None'], ")
+   alist.append(['C0F9A0', 'None'])
 else:
-   print('[\'%s\', %.2f], ' % ('C0F9A0', round(mean2, 2)))
+   alist.append(['C0F9A0', round(mean2, 2)])
 
 if mean3 == 0:
-   print("['C0G640', 'None'], ")
+   alist.append(['C0G640', 'None'])
 else:
-   print('[\'%s\', %.2f], ' %('C0G640', round(mean3, 2)))
+   alist.append(['C0G640', round(mean3, 2)])
 
 if mean4 == 0:
-   print("['C0R190', 'None'], ")
+   alist.append(['C0R190', 'None'])
 else:
-   print('[\'%s\', %.2f], ' %('C0R190', round(mean4, 2)))
+   alist.append(['C0R190', round(mean4, 2)])
 if mean5 == 0:
-   print("['C0X260', 'None']]")
+   alist.append(['C0X260', 'None'])
 else:
-   print('[\'%s\', %.2f]]' % ('C0X260', round(mean5, 2)))
+   alist.append(['C0X260', round(mean5, 2)])
+print(alist)
 
 
 
